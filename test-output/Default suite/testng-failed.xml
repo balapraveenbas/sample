@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
+    <classes>
+      <class name="in.redBus.BusBooking"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="in.redBus.BusBooking">
+        <methods>
+          <include name="browserClose"/>
+          <include name="select_A_Date_From_DropDown"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="send_Value_In_From_Input_Box"/>
+          <include name="beforeSuite"/>
+          <include name="send_Value_In_To_Input_Box"/>
+          <include name="applicationLaunch"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="click_On_Search_Button"/>
+        </methods>
+      </class> <!-- in.redBus.BusBooking -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

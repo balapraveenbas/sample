@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="1" failed="2" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-11T10:21:19Z" name="Suite" finished-at="2024-06-11T10:22:04Z" duration-ms="44810">
+    <groups>
+      <group name="smoke">
+        <method signature="BusBooking.send_Value_In_From_Input_Box()[pri:0, instance:in.redBus.BusBooking@e383572]" name="send_Value_In_From_Input_Box" class="in.redBus.BusBooking"/>
+        <method signature="BusBooking.send_Value_In_To_Input_Box(java.lang.String)[pri:0, instance:in.redBus.BusBooking@e383572]" name="send_Value_In_To_Input_Box" class="in.redBus.BusBooking"/>
+        <method signature="BusBooking.select_A_Date_From_DropDown()[pri:0, instance:in.redBus.BusBooking@e383572]" name="select_A_Date_From_DropDown" class="in.redBus.BusBooking"/>
+        <method signature="BusBooking.click_On_Search_Button()[pri:0, instance:in.redBus.BusBooking@e383572]" name="click_On_Search_Button" class="in.redBus.BusBooking"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="BusBooking.validate_Buses_Displayed()[pri:0, instance:in.redBus.BusBooking@e383572]" name="validate_Buses_Displayed" class="in.redBus.BusBooking"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-06-11T10:21:19Z" name="Test1" finished-at="2024-06-11T10:22:04Z" duration-ms="44810">
+      <class name="in.redBus.BusBooking">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:19Z" name="beforeSuite" finished-at="2024-06-11T15:51:19Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:19Z" name="beforeTest" finished-at="2024-06-11T15:51:19Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="applicationLaunch(java.lang.String)[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:19Z" name="applicationLaunch" finished-at="2024-06-11T15:51:24Z" duration-ms="4570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLaunch -->
+        <test-method signature="send_Value_In_From_Input_Box()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="send_Value_In_From_Input_Box" finished-at="2024-06-11T15:51:24Z" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1234] but found [10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1234] but found [10000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at in.redBus.BusBooking.send_Value_In_From_Input_Box(BusBooking.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- send_Value_In_From_Input_Box -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="beforeMethod" finished-at="2024-06-11T15:51:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="beforeMethod" finished-at="2024-06-11T15:51:24Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="afterMethod" finished-at="2024-06-11T15:51:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="send_Value_In_From_Input_Box()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="send_Value_In_From_Input_Box" finished-at="2024-06-11T15:51:24Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1234] but found [10000]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1234] but found [10000]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at in.redBus.BusBooking.send_Value_In_From_Input_Box(BusBooking.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- send_Value_In_From_Input_Box -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="beforeMethod" finished-at="2024-06-11T15:51:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="afterMethod" finished-at="2024-06-11T15:51:24Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validate_Buses_Displayed()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:51:24Z" name="validate_Buses_Displayed" finished-at="2024-06-11T15:52:04Z" duration-ms="40205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_Buses_Displayed -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="afterMethod" finished-at="2024-06-11T15:52:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="send_Value_In_To_Input_Box(java.lang.String)[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="send_Value_In_To_Input_Box" finished-at="2024-06-11T15:52:04Z" depends-on-methods="in.redBus.BusBooking.send_Value_In_From_Input_Box" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- send_Value_In_To_Input_Box -->
+        <test-method signature="select_A_Date_From_DropDown()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="select_A_Date_From_DropDown" finished-at="2024-06-11T15:52:04Z" depends-on-methods="in.redBus.BusBooking.send_Value_In_To_Input_Box" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_A_Date_From_DropDown -->
+        <test-method signature="click_On_Search_Button()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="click_On_Search_Button" finished-at="2024-06-11T15:52:04Z" depends-on-methods="in.redBus.BusBooking.select_A_Date_From_DropDown" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_On_Search_Button -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="browserClose" finished-at="2024-06-11T15:52:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="afterTest" finished-at="2024-06-11T15:52:04Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:in.redBus.BusBooking@e383572]" started-at="2024-06-11T15:52:04Z" name="afterSuite" finished-at="2024-06-11T15:52:04Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- in.redBus.BusBooking -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

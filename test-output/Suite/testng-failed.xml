@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
+  <parameter name="para" value="Trichy"/>
+  <parameter name="browser" value="edge"/>
+  <listeners>
+    <listener class-name="in.redBus.Transformer"/>
+  </listeners>
+  <test parallel="tests" name="Test1(failed)">
+    <parameter name="para" value="Trichy"/>
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="in.redBus.BusBooking">
+        <methods>
+          <include name="browserClose"/>
+          <include name="select_A_Date_From_DropDown"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="send_Value_In_From_Input_Box"/>
+          <include name="beforeSuite"/>
+          <include name="send_Value_In_To_Input_Box"/>
+          <include name="applicationLaunch"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="click_On_Search_Button"/>
+        </methods>
+      </class> <!-- in.redBus.BusBooking -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
